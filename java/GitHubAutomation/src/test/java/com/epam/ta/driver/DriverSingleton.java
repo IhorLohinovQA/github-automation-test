@@ -29,6 +29,7 @@ public class DriverSingleton {
                 default: {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
+                    System.out.println("ChromeDriver path: " + System.getProperty("webdriver.chrome.driver"));
                     break;
                 }
             }
