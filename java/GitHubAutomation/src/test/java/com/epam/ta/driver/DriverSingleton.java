@@ -27,7 +27,7 @@ public class DriverSingleton {
                     break;
                 }
                 default: {
-                    WebDriverManager.chromedriver().setup();
+                    WebDriverManager.chromedriver().driverVersion("116.0.5845.96").setup();
                     driver = new ChromeDriver();
                     break;
                 }
