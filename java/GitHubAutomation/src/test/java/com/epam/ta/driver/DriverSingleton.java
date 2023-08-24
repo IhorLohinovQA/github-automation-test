@@ -22,7 +22,8 @@ public class DriverSingleton {
                     break;
                 }
                 case "safari": {
-                    WebDriverManager.safaridriver().setup();
+                    //WebDriverManager.safaridriver().setup();
+                    System.setProperty("webdriver.safari.driver", "/usr/bin/safaridriver");
                     driver = new SafariDriver();
                     break;
                 }
