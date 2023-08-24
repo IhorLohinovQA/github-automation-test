@@ -18,7 +18,7 @@ public class MainPage extends AbstractPage
 	@FindBy(xpath = "//a[contains(text(), 'New repository')]")
 	private WebElement linkNewRepository;
 
-	@FindBy(xpath = "//*[@ari-label='Open user account menu']") //TUT
+	@FindBy(xpath = "//*[@aria-label='Open user account menu']")
 	private WebElement avatarMenuOpen;
 
 
